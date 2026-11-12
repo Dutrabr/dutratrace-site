@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DutraTrace — Monitoramento de influenciadores</title>
 <meta name="description" content="O DutraTrace transcreve a fala, lê o texto da tela e aponta ofertas, cupons, sorteios, publis sem identificação e apostas nos posts e stories de influenciadores.">
-<meta property="og:title" content="DutraTrace — A legenda é só uma parte do que o influenciador publica">
+<meta property="og:title" content="DutraTrace — Monitoramento de influenciadores">
 <meta property="og:description" content="Diagnóstico gratuito de 30 dias de um creator.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Ccircle cx='17' cy='17' r='13.5' fill='none' stroke='%231F5FAD' stroke-width='4'/%3E%3Cpath d='M10.5 17.5l4.5 4.5 9-10' fill='none' stroke='%231F5FAD' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -68,6 +68,7 @@ html{scroll-behavior:smooth}
         <a href="#diferenca" style="color: #C9CDD4; text-decoration: none">O que a legenda esconde</a>
         <a href="#relatorio" style="color: #C9CDD4; text-decoration: none">Relatório</a>
         <a href="#sob-medida" style="color: #C9CDD4; text-decoration: none">Sob medida</a>
+        <a href="apostas.html" style="color: #C9CDD4; text-decoration: none">Apostas</a>
         <a href="#precos" style="color: #C9CDD4; text-decoration: none">Preços</a>
         <a href="#perguntas" style="color: #C9CDD4; text-decoration: none">Perguntas</a>
         <a href="#contato" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #1F5FAD; color: #FFFFFF; text-decoration: none; font-weight: 600">Diagnóstico grátis</a>
@@ -81,15 +82,15 @@ html{scroll-behavior:smooth}
       <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
         <span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8DB8F0; border: 1px solid #1E3A63; background: #142238; padding: 6px 12px; border-radius: 999px">Publicidade com influenciadores</span>
         <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 58px; line-height: 1.03; letter-spacing: -0.03em; font-weight: 700; color: #FFFFFF">A <span class="dt-under">legenda</span> é só uma parte do que o influenciador publica.</h1>
-        <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #B9BDC6; max-width: 560px">O DutraTrace transcreve o que é falado nos stories e reels, lê o texto da tela e aponta ofertas, cupons, sorteios, publis sem identificação e apostas. Inclusive o que some em 24 horas.</p>
+        <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #B9BDC6; max-width: 560px">O DutraTrace analisa o feed e os stories: transcreve o que é falado nos posts, reels e stories, lê o texto da tela, confere a legenda e aponta ofertas, cupons, sorteios, publis sem identificação e apostas. Inclusive o que some em 24 horas.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px">
           <a class="btn" href="#contato" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; background: #1F5FAD; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px">Quero um diagnóstico gratuito</a>
-          <a href="#relatorio" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; border: 1px solid #3A414D; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px">Ver exemplo de relatório</a>
+          <a href="#contato" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; border: 1px solid #3A414D; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px">Baixar relatório de exemplo</a>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 28px; padding-top: 20px; border-top: 1px solid #2C323D">
-          <div style="display: flex; flex-direction: column; gap: 2px"><span class="cnt" aria-label="77" style="--to: 77; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #FFFFFF"></span><span style="font-size: 13px; color: #A9AEB8">vídeos transcritos no teste</span></div>
-          <div style="display: flex; flex-direction: column; gap: 2px"><span class="cnt" aria-label="208" style="--to: 208; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #FFFFFF"></span><span style="font-size: 13px; color: #A9AEB8">arquivos com texto da tela lido</span></div>
-          <div style="display: flex; flex-direction: column; gap: 2px"><span class="cnt pct" aria-label="41%" style="--to: 41; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #FFFFFF"></span><span style="font-size: 13px; color: #A9AEB8">dos stories de um perfil com oferta só no áudio</span></div>
+          <div style="display: flex; flex-direction: column; gap: 2px; max-width: 220px"><span class="cnt pct" aria-label="41%" style="--to: 41; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #8DB8F0"></span><span style="font-size: 13px; line-height: 1.4; color: #A9AEB8">dos stories em vídeo de um perfil com +10M tinham oferta falada que não aparecia escrita</span></div>
+          <div style="display: flex; flex-direction: column; gap: 2px; max-width: 160px"><span class="cnt" aria-label="3" style="--to: 3; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #FFFFFF"></span><span style="font-size: 13px; line-height: 1.4; color: #A9AEB8">camadas lidas em cada conteúdo: fala, tela e legenda</span></div>
+          <div style="display: flex; flex-direction: column; gap: 2px; max-width: 160px"><span class="cnt" aria-label="30" style="--to: 30; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #FFFFFF"></span><span style="font-size: 13px; line-height: 1.4; color: #A9AEB8">dias de histórico no diagnóstico gratuito</span></div>
         </div>
       </div>
 
@@ -129,13 +130,13 @@ html{scroll-behavior:smooth}
 
   <!-- FAIXA EM MOVIMENTO -->
   <div style="background: #1F5FAD; color: #FFFFFF; overflow: hidden; padding: 16px 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em">
-    <p style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: 0">O DutraTrace analisa fala, texto na tela, legenda, stories, cupons, link na bio, publi, sorteios e apostas.</p>
+    <p style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: 0">O DutraTrace analisa fala, texto na tela, legenda, posts, reels, stories, cupons, link na bio, publi, sorteios e apostas.</p>
     <div class="dt-marquee" aria-hidden="true">
       <div style="display: flex; gap: 40px; padding-right: 40px; white-space: nowrap">
-        <span>fala transcrita</span><span style="opacity: .6">/</span><span>texto na tela</span><span style="opacity: .6">/</span><span>legenda</span><span style="opacity: .6">/</span><span>stories de 24 h</span><span style="opacity: .6">/</span><span>cupom</span><span style="opacity: .6">/</span><span>link na bio</span><span style="opacity: .6">/</span><span>#publi</span><span style="opacity: .6">/</span><span>sorteio</span><span style="opacity: .6">/</span><span>bets</span><span style="opacity: .6">/</span>
+        <span>fala transcrita</span><span style="opacity: .6">/</span><span>texto na tela</span><span style="opacity: .6">/</span><span>legenda</span><span style="opacity: .6">/</span><span>posts e reels</span><span style="opacity: .6">/</span><span>stories de 24 h</span><span style="opacity: .6">/</span><span>cupom</span><span style="opacity: .6">/</span><span>link na bio</span><span style="opacity: .6">/</span><span>#publi</span><span style="opacity: .6">/</span><span>sorteio</span><span style="opacity: .6">/</span><span>bets</span><span style="opacity: .6">/</span>
       </div>
       <div style="display: flex; gap: 40px; padding-right: 40px; white-space: nowrap">
-        <span>fala transcrita</span><span style="opacity: .6">/</span><span>texto na tela</span><span style="opacity: .6">/</span><span>legenda</span><span style="opacity: .6">/</span><span>stories de 24 h</span><span style="opacity: .6">/</span><span>cupom</span><span style="opacity: .6">/</span><span>link na bio</span><span style="opacity: .6">/</span><span>#publi</span><span style="opacity: .6">/</span><span>sorteio</span><span style="opacity: .6">/</span><span>bets</span><span style="opacity: .6">/</span>
+        <span>fala transcrita</span><span style="opacity: .6">/</span><span>texto na tela</span><span style="opacity: .6">/</span><span>legenda</span><span style="opacity: .6">/</span><span>posts e reels</span><span style="opacity: .6">/</span><span>stories de 24 h</span><span style="opacity: .6">/</span><span>cupom</span><span style="opacity: .6">/</span><span>link na bio</span><span style="opacity: .6">/</span><span>#publi</span><span style="opacity: .6">/</span><span>sorteio</span><span style="opacity: .6">/</span><span>bets</span><span style="opacity: .6">/</span>
       </div>
     </div>
   </div>
@@ -145,7 +146,7 @@ html{scroll-behavior:smooth}
     <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
       <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F5FAD">O problema</span>
       <h2 class="rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 42px; letter-spacing: -0.02em; line-height: 1.08">Quem confere só a legenda deixa passar a maior parte.</h2>
-      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3B4250">Ferramentas comuns leem texto e métricas. A oferta, o cupom e a menção à marca muitas vezes estão na fala e na tela, e o story desaparece no dia seguinte.</p>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3B4250">Ferramentas comuns leem texto e métricas. A oferta, o cupom e a menção à marca muitas vezes estão na fala e na tela, tanto no reel do feed quanto no story, que ainda desaparece no dia seguinte.</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
       <div class="rv" style="background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
@@ -164,7 +165,7 @@ html{scroll-behavior:smooth}
           <li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 64px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">FALA</span><span>Preço dito em voz alta e "vou deixar o link"</span></li>
           <li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 64px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">TELA</span><span>Valor, código de cupom e @ da marca marcados na imagem</span></li>
           <li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 64px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">LEGENDA</span><span>Nenhum #publi ou "parceria paga" no início</span></li>
-          <li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 64px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">ARQUIVO</span><span>Story guardado com data e hora, mesmo depois que some</span></li>
+          <li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 64px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">ARQUIVO</span><span>Story guardado com data, hora e hash SHA-256, mesmo depois que some</span></li>
         </ul>
       </div>
     </div>
@@ -175,7 +176,7 @@ html{scroll-behavior:smooth}
     <div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 44px">
       <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
         <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F5FAD">Como funciona</span>
-        <h2 class="rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 42px; letter-spacing: -0.02em; line-height: 1.08">Três etapas. Ninguém da sua equipe assistindo story por story.</h2>
+        <h2 class="rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 42px; letter-spacing: -0.02em; line-height: 1.08">Três etapas. Ninguém da sua equipe assistindo post por post e story por story.</h2>
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
         <div class="rv lift" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid #E4E1D8; border-radius: 14px">
@@ -186,7 +187,7 @@ html{scroll-behavior:smooth}
         <div class="rv lift" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid #E4E1D8; border-radius: 14px">
           <span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; background: #E7EFF9; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: #1F5FAD">2</span>
           <h3 style="margin: 0; font-size: 21px; font-family: 'Space Grotesk', sans-serif">A coleta roda sozinha</h3>
-          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3B4250">Feed e stories são baixados e guardados todos os dias. Só conteúdo público: nada de comentários ou dados de seguidores.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3B4250">Feed, stories e vídeos do YouTube são baixados e guardados todos os dias. Só conteúdo público: nada de comentários ou dados de seguidores.</p>
         </div>
         <div class="rv lift" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid #E4E1D8; border-radius: 14px">
           <span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; background: #E7EFF9; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: #1F5FAD">3</span>
@@ -256,6 +257,29 @@ html{scroll-behavior:smooth}
     </div>
   </section>
 
+  <!-- EVIDÊNCIA -->
+  <section id="evidencia" style="max-width: 1160px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+    <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+      <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F5FAD">Pacote de evidência</span>
+      <h2 class="rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 42px; letter-spacing: -0.02em; line-height: 1.08">Cada conteúdo guardado como prova.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3B4250">Para jurídico e compliance, não basta dizer que viu. Cada arquivo coletado gera um registro que permite mostrar o que foi publicado e provar que o arquivo não foi alterado depois.</p>
+    </div>
+    <div class="rv" style="flex: 1 1 480px; min-width: 0; background: #14181F; color: #E9E7E1; border-radius: 16px; padding: 28px; font-size: 14px">
+      <p style="margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #8DB8F0">Registro de um story</p>
+      <dl style="margin: 0; display: grid; grid-template-columns: minmax(120px, auto) 1fr; gap: 10px 20px">
+        <dt style="color: #A9AEB8">Arquivo original</dt><dd style="margin: 0">vídeo .mp4, como foi publicado</dd>
+        <dt style="color: #A9AEB8">Perfil</dt><dd style="margin: 0">link do perfil de origem</dd>
+        <dt style="color: #A9AEB8">Origem</dt><dd style="margin: 0">story, post ou vídeo do YouTube</dd>
+        <dt style="color: #A9AEB8">Coletado em</dt><dd style="margin: 0">data e hora da coleta</dd>
+        <dt style="color: #A9AEB8">SHA-256</dt><dd style="margin: 0; font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #8DB8F0; overflow-wrap: anywhere">9f3c1a7e52b04d8e…a61c07e4b2d95f18c3</dd>
+        <dt style="color: #A9AEB8">Fala</dt><dd style="margin: 0">trecho transcrito</dd>
+        <dt style="color: #A9AEB8">Tela</dt><dd style="margin: 0">texto lido na imagem</dd>
+        <dt style="color: #A9AEB8">Alertas</dt><dd style="margin: 0">regras que dispararam</dd>
+      </dl>
+      <p style="margin: 18px 0 0; font-size: 13px; color: #8C929D">Entregue em planilha, junto com os arquivos.</p>
+    </div>
+  </section>
+
   <!-- O QUE DETECTAMOS -->
   <section id="deteccao" style="background: #FFFFFF; border-top: 1px solid #DEDBD2; border-bottom: 1px solid #DEDBD2">
     <div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 44px">
@@ -272,7 +296,7 @@ html{scroll-behavior:smooth}
         <div class="rv lift" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #F6F5F1; border-radius: 14px">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F5FAD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 9h10M7 13h6"></path></svg>
           <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif">Texto na tela</h3>
-          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Leitura automática de stories e artes: preços, códigos de cupom, @ de marcas marcadas.</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Leitura automática de posts, carrosséis, stories e artes: preços, códigos de cupom, @ de marcas marcadas.</p>
         </div>
         <div class="rv lift" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #F6F5F1; border-radius: 14px">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F5FAD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"></path><path d="M17 15l2 2 3-4"></path></svg>
@@ -305,7 +329,7 @@ html{scroll-behavior:smooth}
           <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B9BDC6">Menções a títulos e prêmios, "concorra", "sorteio", e se o regulamento ou as condições aparecem junto.</p>
         </div>
         <div class="rv lift" style="padding: 24px; background: #1E232B; border: 1px solid #2C323D; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
-          <h3 style="margin: 0; font-size: 19px; font-family: 'Space Grotesk', sans-serif; color: #FFFFFF">Apostas</h3>
+          <h3 style="margin: 0; font-size: 19px; font-family: 'Space Grotesk', sans-serif; color: #FFFFFF"><a href="apostas.html" style="color: #FFFFFF">Apostas</a></h3>
           <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B9BDC6">Casas citadas, códigos de bônus, "tigrinho", e presença de avisos de idade e jogo responsável.</p>
         </div>
         <div class="rv lift" style="padding: 24px; background: #1E232B; border: 1px solid #2C323D; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
@@ -356,7 +380,7 @@ html{scroll-behavior:smooth}
       </div>
       <div class="rv lift" style="padding: 28px; background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
         <h3 style="margin: 0; font-size: 19px; font-family: 'Space Grotesk', sans-serif">Escritórios de advocacia</h3>
-        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Conteúdo guardado com data e origem, inclusive stories, para pareceres e casos de publicidade.</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Posts e stories guardados com data e origem, para pareceres e casos de publicidade.</p>
       </div>
       <div class="rv lift" style="padding: 28px; background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
         <h3 style="margin: 0; font-size: 19px; font-family: 'Space Grotesk', sans-serif">Compliance</h3>
@@ -373,10 +397,11 @@ html{scroll-behavior:smooth}
         <h2 class="rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 42px; letter-spacing: -0.02em; line-height: 1.08; color: #FFFFFF">Comece com um diagnóstico gratuito.</h2>
         <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #B9BDC6">Escolha um creator. Analisamos os últimos 30 dias e enviamos os pontos de atenção em privado. Depois, o preço depende de quantos creators você acompanha: quanto mais creators, menor o valor por creator.</p>
         <p style="margin: 0; font-size: 16px; color: #E9E7E1">Auditoria avulsa de 1 creator: <strong>R$ 290</strong></p>
+        <p class="rv" style="margin: 8px 0 0; padding: 18px 20px; border-left: 3px solid #4F8FE0; background: #1E232B; border-radius: 0 10px 10px 0; font-size: 17px; line-height: 1.5; color: #FFFFFF">Ferramentas de monitoramento acham o post que marca a sua marca. O DutraTrace acha a oferta que não marcou nada.</p>
       </div>
       <div class="rv" style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; color: #14181F; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
         <span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #1F5FAD; border: 1px solid #C5D6EE; background: #E7EFF9; padding: 6px 12px; border-radius: 999px">Preço de fundador</span>
-        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A6170">Monitoramento a partir de</p>
+        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A6170">Auditoria contínua a partir de</p>
         <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px">
           <s style="font-size: 20px; color: #5A6170">R$ 1.490</s>
           <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700">R$ 990<span style="font-size: 18px; font-weight: 500; color: #5A6170"> /mês</span></p>
@@ -385,13 +410,22 @@ html{scroll-behavior:smooth}
         <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.5; color: #3B4250">
           <li>Até 5 creators monitorados</li>
           <li>3 KPIs à sua escolha</li>
-          <li>Instagram: feed e stories</li>
+          <li>Instagram (feed e stories) e YouTube</li>
           <li>Relatório semanal com pontos de atenção</li>
           <li>Arquivo dos conteúdos coletados</li>
         </ul>
         <a href="#contato" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 10px; background: #1F5FAD; color: #FFFFFF; text-decoration: none; font-weight: 600">Pedir diagnóstico</a>
         <p style="margin: 0; font-size: 14px; color: #5A6170">KPIs extras e planos de 15 ou 40 creators sob orçamento.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- QUEM ESTÁ POR TRÁS -->
+  <section id="quem" style="background: #FFFFFF; border-top: 1px solid #DEDBD2; border-bottom: 1px solid #DEDBD2">
+    <div style="max-width: 860px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 16px">
+      <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #1F5FAD">Quem está por trás</span>
+      <p class="rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 28px; line-height: 1.35; letter-spacing: -0.01em; color: #14181F">Sou João Victor Dutra. Há mais de 5 anos atuo entre compliance e tecnologia: transformo normas em pontos de controle e construo automações em Python para monitorar o que precisa ser monitorado. O DutraTrace nasceu da mesma pergunta que faço no dia a dia: o que está sendo dito que ninguém está conferindo?</p>
+      <a href="https://www.linkedin.com/in/joao-victor-dutra19/" target="_blank" rel="noopener" style="align-self: flex-start; font-weight: 600; text-decoration: none">Ver meu LinkedIn</a>
     </div>
   </section>
 
@@ -424,23 +458,38 @@ html{scroll-behavior:smooth}
       </details>
       <details class="rv" style="border-bottom: 1px solid #DEDBD2; padding: 20px 0">
         <summary style="cursor: pointer; font-size: 18px; font-weight: 600; font-family: 'Space Grotesk', sans-serif; min-height: 28px">Quais redes vocês cobrem?</summary>
-        <p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3B4250">Hoje, Instagram (feed e stories). Outras redes sob consulta.</p>
+        <p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3B4250">Instagram (feed e stories) e YouTube. TikTok em breve.</p>
       </details>
     </div>
   </section>
 
   <!-- CONTATO -->
   <section id="contato" style="background: #1F5FAD; color: #FFFFFF">
-    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
-      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <h2 class="rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 42px; letter-spacing: -0.02em; line-height: 1.08">Quer ver o que seus creators falaram este mês?</h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #E7EFF9">Mande um perfil e receba o diagnóstico de 30 dias, sem custo.</p>
+    <div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 42px; letter-spacing: -0.02em; line-height: 1.08">Quer ver o que seus creators falaram este mês?</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #E7EFF9">Preencha o formulário e receba na hora o relatório de exemplo em PDF. Se indicar um perfil, eu preparo o diagnóstico de 30 dias, sem custo.</p>
+        <p style="margin: 8px 0 0; font-size: 15px; color: #E7EFF9">Prefere conversar direto?</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="https://wa.me/5521998677609?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20do%20DutraTrace" target="_blank" rel="noopener" style="display: inline-flex; gap: 8px; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; background: #FFFFFF; color: #14181F; text-decoration: none; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"></path><path d="M9 8.6c.2 2.9 3.4 6.1 6.3 6.4l1.3-1.6-2.1-1.2-1 .9c-1.2-.5-2.2-1.5-2.7-2.7l.9-1-1.2-2.1z"></path></svg>WhatsApp (21) 99867-7609</a>
+          <a href="mailto:contato@dutratrace.com.br?subject=Diagn%C3%B3stico%20DutraTrace" style="display: inline-flex; gap: 8px; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3.5 6.5l8.5 6.5 8.5-6.5"></path></svg>E-mail</a>
+          <a href="https://www.linkedin.com/company/dutratrace/" target="_blank" rel="noopener" style="display: inline-flex; gap: 8px; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10.5v6M8 7.5v.01M12 16.5v-3.5a2 2 0 0 1 4 0v3.5M12 10.5v6"></path></svg>LinkedIn</a>
+        </div>
       </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 12px">
-        <a href="https://wa.me/5521998677609?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20do%20DutraTrace" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; background: #FFFFFF; color: #14181F; text-decoration: none; font-weight: 600">WhatsApp (21) 99867-7609</a>
-        <a href="mailto:joao.dutratrace@gmail.com?subject=Diagn%C3%B3stico%20DutraTrace" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 600">joao.dutratrace@gmail.com</a>
-        <a href="https://www.linkedin.com/company/dutratrace/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 24px; border-radius: 10px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg>LinkedIn</a>
-      </div>
+      <form action="https://formsubmit.co/joao.dutratrace@gmail.com" method="POST" style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; color: #14181F; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+        <input type="hidden" name="_subject" value="Novo contato pelo site DutraTrace">
+        <input type="hidden" name="_next" value="https://dutratrace.com.br/obrigado.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
+        <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700">Relatório de exemplo + diagnóstico grátis</p>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3B4250">Nome<input type="text" name="nome" required autocomplete="name" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 10px 14px; border: 1px solid #C9CDD4; border-radius: 10px; font: inherit; font-size: 16px; color: #14181F; background: #FFFFFF"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3B4250">Empresa<input type="text" name="empresa" required autocomplete="organization" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 10px 14px; border: 1px solid #C9CDD4; border-radius: 10px; font: inherit; font-size: 16px; color: #14181F; background: #FFFFFF"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3B4250">E-mail de trabalho<input type="email" name="email" required autocomplete="email" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 10px 14px; border: 1px solid #C9CDD4; border-radius: 10px; font: inherit; font-size: 16px; color: #14181F; background: #FFFFFF"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3B4250">Setor<select name="setor" required style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 10px 14px; border: 1px solid #C9CDD4; border-radius: 10px; font: inherit; font-size: 16px; color: #14181F; background: #FFFFFF"><option value="">Selecione</option><option>Agência de influência</option><option>Marca / anunciante</option><option>Apostas</option><option>Capitalização e sorteios</option><option>Escritório de advocacia</option><option>Compliance</option><option>Outro</option></select></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3B4250">Perfil para o diagnóstico (opcional)<input type="text" name="perfil" placeholder="@perfil ou link" style="width: 100%; box-sizing: border-box; min-height: 48px; padding: 10px 14px; border: 1px solid #C9CDD4; border-radius: 10px; font: inherit; font-size: 16px; color: #14181F; background: #FFFFFF"></label>
+        <button type="submit" class="btn" style="min-height: 52px; border: 0; border-radius: 10px; background: #14181F; color: #FFFFFF; font: inherit; font-size: 16px; font-weight: 600; cursor: pointer">Receber relatório de exemplo</button>
+        <p style="margin: 0; font-size: 12px; line-height: 1.5; color: #5A6170">Seus dados são usados só para responder e enviar o diagnóstico. Veja a <a href="privacidade.html">política de privacidade</a>.</p>
+      </form>
     </div>
   </section>
 
@@ -451,9 +500,10 @@ html{scroll-behavior:smooth}
       <span>Análise de conteúdo público em redes sociais. Sem comentários, sem dados de seguidores.</span>
     </div>
     <nav aria-label="Contato" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center">
-      <a href="mailto:joao.dutratrace@gmail.com" style="color: #1F5FAD; text-decoration: none; font-weight: 600">joao.dutratrace@gmail.com</a>
-      <a href="https://www.linkedin.com/company/dutratrace/" target="_blank" rel="noopener" style="color: #1F5FAD; text-decoration: none; font-weight: 600">LinkedIn</a>
-      <a href="https://wa.me/5521998677609" target="_blank" rel="noopener" style="color: #1F5FAD; text-decoration: none; font-weight: 600">WhatsApp</a>
+      <a href="mailto:contato@dutratrace.com.br" style="display: inline-flex; align-items: center; gap: 6px; color: #1F5FAD; text-decoration: none; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3.5 6.5l8.5 6.5 8.5-6.5"></path></svg>contato@dutratrace.com.br</a>
+      <a href="https://www.linkedin.com/company/dutratrace/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; color: #1F5FAD; text-decoration: none; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10.5v6M8 7.5v.01M12 16.5v-3.5a2 2 0 0 1 4 0v3.5M12 10.5v6"></path></svg>LinkedIn</a>
+      <a href="https://wa.me/5521998677609" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; color: #1F5FAD; text-decoration: none; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"></path><path d="M9 8.6c.2 2.9 3.4 6.1 6.3 6.4l1.3-1.6-2.1-1.2-1 .9c-1.2-.5-2.2-1.5-2.7-2.7l.9-1-1.2-2.1z"></path></svg>WhatsApp</a>
+      <a href="privacidade.html" style="color: #1F5FAD; text-decoration: none; font-weight: 600">Política de privacidade</a>
     </nav>
   </footer>
 </div>
