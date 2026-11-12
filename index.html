@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DutraTrace — Monitoramento de influenciadores</title>
+<meta name="description" content="O DutraTrace transcreve a fala, lê o texto da tela e aponta ofertas, cupons, sorteios, publis sem identificação e apostas nos posts e stories de influenciadores.">
+<meta property="og:title" content="DutraTrace — A legenda é só uma parte do que o influenciador publica">
+<meta property="og:description" content="Diagnóstico gratuito de 30 dias de um creator.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='12' fill='none' stroke='%2314181F' stroke-width='2'/%3E%3Ccircle cx='14' cy='14' r='6' fill='none' stroke='%23C2410C' stroke-width='2'/%3E%3Ccircle cx='14' cy='14' r='1.8' fill='%23C2410C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F5F1}
+a{color:#B4401A}a:hover{color:#8A2F12}
+</style>
+<style>html{scroll-behavior:smooth}@media (max-width:640px){h1{font-size:40px!important}h2{font-size:30px!important}}</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #14181F; background: #F6F5F1; width: 100%; min-height: 100vh">
+
+  <!-- NAV -->
+  <header style="border-bottom: 1px solid #DEDBD2">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+      <a href="#topo" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #14181F">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12" stroke="#14181F" stroke-width="2"></circle><circle cx="14" cy="14" r="6" stroke="#C2410C" stroke-width="2"></circle><circle cx="14" cy="14" r="1.8" fill="#C2410C"></circle></svg>
+        <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.02em">DutraTrace</span>
+      </a>
+      <nav aria-label="Principal" style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; font-size: 15px">
+        <a href="#como-funciona" style="color: #3B4250; text-decoration: none">Como funciona</a>
+        <a href="#deteccao" style="color: #3B4250; text-decoration: none">O que detectamos</a>
+        <a href="#teste" style="color: #3B4250; text-decoration: none">Teste real</a>
+        <a href="#para-quem" style="color: #3B4250; text-decoration: none">Para quem</a>
+        <a href="#contato" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #14181F; color: #F6F5F1; text-decoration: none; font-weight: 600">Pedir diagnóstico</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="topo" style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+    <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      <span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #B4401A; border: 1px solid #E7C9BC; background: #FBEDE6; padding: 6px 12px; border-radius: 999px">Publicidade com influenciadores</span>
+      <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 56px; line-height: 1.04; letter-spacing: -0.03em; font-weight: 700">A legenda é só uma parte do que o influenciador publica.</h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #3B4250; max-width: 560px">O DutraTrace coleta posts, stories e vídeos, transcreve o que é falado, lê o texto que aparece na tela e aponta ofertas, cupons, sorteios, menções a marcas e conteúdo de apostas, inclusive o que some em 24 horas.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a href="#contato" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; background: #C2410C; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px">Quero um diagnóstico gratuito</a>
+        <a href="#teste" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; border: 1px solid #C9C5BA; color: #14181F; text-decoration: none; font-weight: 600; font-size: 16px">Ver o teste real</a>
+      </div>
+    </div>
+
+    <!-- Mock de alerta -->
+    <div style="flex: 1 1 400px; min-width: 0">
+      <div style="background: #14181F; color: #E9E7E1; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 24px 48px -24px rgba(20,24,31,0.45)">
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #A9AEB8">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #E9E7E1; font-size: 15px">Pontos de atenção</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #5FD39A"></span>coletando</span>
+        </div>
+        <div style="border: 1px solid #2C323D; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 13px">
+            <span style="color: #A9AEB8">Perfil de lifestyle · Story</span>
+            <span style="color: #F2D06B; font-weight: 600">Revisar</span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5">Preço e "vou deixar o link" falados no áudio. Nada disso aparece por escrito.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px">
+            <span style="padding: 4px 10px; border-radius: 999px; background: #262C36; color: #D3D6DC">transcrição</span>
+            <span style="padding: 4px 10px; border-radius: 999px; background: #262C36; color: #D3D6DC">oferta</span>
+          </div>
+        </div>
+        <div style="border: 1px solid #2C323D; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 13px">
+            <span style="color: #A9AEB8">Perfil de entretenimento · Post</span>
+            <span style="color: #FFB49A; font-weight: 600">Atenção</span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5">Divulgação de marca ligada ao próprio perfil sem identificação publicitária no início da legenda.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px">
+            <span style="padding: 4px 10px; border-radius: 999px; background: #262C36; color: #D3D6DC">legenda</span>
+            <span style="padding: 4px 10px; border-radius: 999px; background: #262C36; color: #D3D6DC">publi</span>
+          </div>
+        </div>
+        <p style="margin: 0; font-size: 12px; color: #8C929D">Casos reais do teste, anonimizados. Pontos de atenção não são acusação de irregularidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" style="background: #FFFFFF; border-top: 1px solid #DEDBD2; border-bottom: 1px solid #DEDBD2">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+        <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.02em; line-height: 1.1">Como funciona</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3B4250">Três etapas, sem ninguém da sua equipe assistindo story por story.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+        <div style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid #E4E1D8; border-radius: 14px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #B4401A">01</span>
+          <h3 style="margin: 0; font-size: 21px; font-family: 'Space Grotesk', sans-serif">Você define os perfis</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3B4250">Os influenciadores do seu casting ou da sua campanha, o período e o que importa para você: marcas, cupons, concorrentes, apostas.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid #E4E1D8; border-radius: 14px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #B4401A">02</span>
+          <h3 style="margin: 0; font-size: 21px; font-family: 'Space Grotesk', sans-serif">A coleta roda sozinha</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3B4250">Feed e stories são baixados e guardados, inclusive o que some em 24 horas. Só conteúdo público: nada de comentários ou dados de seguidores.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid #E4E1D8; border-radius: 14px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #B4401A">03</span>
+          <h3 style="margin: 0; font-size: 21px; font-family: 'Space Grotesk', sans-serif">Você recebe o relatório</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3B4250">Planilha por perfil e data, com uma aba de pontos de atenção, o trecho falado ou escrito e o arquivo de cada conteúdo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETECÇÃO -->
+  <section id="deteccao" style="max-width: 1160px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 48px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 680px">
+      <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.02em; line-height: 1.1">O que a análise enxerga</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3B4250">Muita divulgação acontece na fala e na tela, não na legenda. A ferramenta lê as três.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 14px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg>
+        <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif">Fala nos vídeos</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Transcrição de reels e stories: marca citada, preço, "link na bio", cupom dito em voz alta.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 14px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 9h10M7 13h6"></path></svg>
+        <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif">Texto na tela</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Leitura automática (OCR) de stories e artes: preços, códigos de cupom, @ de marcas marcadas.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 14px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h10"></path><path d="M17 15l2 2 3-4"></path></svg>
+        <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif">Identificação de publi</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Verifica se a legenda traz #publi, "publicidade" ou "parceria paga" logo no começo, como recomenda o guia do CONAR.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 14px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14181F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 16H3z"></path><path d="M12 10v4M12 17h.01"></path></svg>
+        <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif">Apostas e sorteios</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #3B4250">Menções a bets, casas de aposta, "tigrinho" e sorteios condicionados à compra, na fala, na tela ou na legenda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTE REAL -->
+  <section id="teste" style="background: #FFFFFF; border-top: 1px solid #DEDBD2; border-bottom: 1px solid #DEDBD2">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+        <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.02em; line-height: 1.1">Teste real: 30 dias, 3 perfis com mais de 10M de seguidores</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3B4250">Rodamos a ferramenta em perfis grandes de lifestyle e entretenimento. Os nomes ficam de fora; os números, não.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+        <div style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border: 1px solid #E4E1D8; border-radius: 14px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.02em">77</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3B4250">vídeos com o áudio transcrito</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border: 1px solid #E4E1D8; border-radius: 14px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.02em">208</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3B4250">imagens e vídeos com o texto da tela lido</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border: 1px solid #E4E1D8; border-radius: 14px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.02em; color: #C2410C">12 de 29</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3B4250">stories em vídeo de um perfil tinham oferta com preço e link falados só no áudio</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border: 1px solid #E4E1D8; border-radius: 14px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.02em">74</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3B4250">stories guardados antes de sumirem em 24 horas</p>
+        </div>
+      </div>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5A6170; max-width: 720px">Também encontramos divulgação de marca ligada ao próprio perfil sem identificação publicitária no início da legenda, e um sorteio condicionado à compra. Nenhuma menção a apostas no período.</p>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section id="para-quem" style="background: #14181F; color: #E9E7E1">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+      <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.02em; line-height: 1.1; color: #FFFFFF">Para quem paga, contrata ou responde pelo que é publicado</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #B9BDC6">Apontamos pontos de atenção com o trecho e o arquivo. A avaliação jurídica fica com você.</p>
+      </div>
+      <div style="flex: 1 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
+        <div style="padding: 24px; border: 1px solid #2C323D; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif; color: #FFFFFF">Agências de influência</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B9BDC6">Prova de entrega para o cliente: quantas vezes a marca foi citada, onde e como.</p>
+        </div>
+        <div style="padding: 24px; border: 1px solid #2C323D; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif; color: #FFFFFF">Marcas</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B9BDC6">Saber se o contrato foi cumprido e se o influenciador também divulga concorrentes ou apostas.</p>
+        </div>
+        <div style="padding: 24px; border: 1px solid #2C323D; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif; color: #FFFFFF">Escritórios de advocacia</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B9BDC6">Conteúdo guardado com data e origem, inclusive stories, para pareceres e casos de publicidade.</p>
+        </div>
+        <div style="padding: 24px; border: 1px solid #2C323D; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <h3 style="margin: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif; color: #FFFFFF">Compliance</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B9BDC6">Checagem antes de fechar contrato: o que o perfil anunciou nos últimos 30 dias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANO -->
+  <section style="max-width: 1160px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+    <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.02em; line-height: 1.1">Comece com um diagnóstico gratuito</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3B4250">Escolha um perfil. Analisamos os últimos 30 dias e enviamos os pontos de atenção em privado. Depois, o preço depende de quantos creators você acompanha: quanto mais creators, menor o valor por creator. Auditoria avulsa de 1 creator: R$ 290.</p>
+    </div>
+    <div style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+      <span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #B4401A; border: 1px solid #E7C9BC; background: #FBEDE6; padding: 6px 12px; border-radius: 999px">Preço de fundador</span>
+      <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A6170">Monitoramento a partir de</p>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px">
+        <s style="font-size: 20px; color: #5A6170">R$ 1.490</s>
+        <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700">R$ 990<span style="font-size: 18px; font-weight: 500; color: #5A6170"> /mês</span></p>
+      </div>
+      <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5A6170">Para os 5 primeiros clientes, garantido por 6 meses.</p>
+      <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.5; color: #3B4250">
+        <li>Até 5 creators monitorados</li>
+        <li>Instagram: feed e stories</li>
+        <li>Relatório semanal com pontos de atenção</li>
+        <li>Arquivo dos conteúdos coletados</li>
+      </ul>
+      <a href="#contato" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 10px; background: #14181F; color: #F6F5F1; text-decoration: none; font-weight: 600">Pedir diagnóstico</a>
+      <p style="margin: 0; font-size: 14px; color: #5A6170">Mais creators? Planos de 15 e 40 creators sob proposta.</p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" style="background: #C2410C; color: #FFFFFF">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+        <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.02em; line-height: 1.1">Quer ver o que seus influenciadores falaram este mês?</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #FFF1EB">Mande um perfil e receba o diagnóstico de 30 dias, sem custo.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px">
+        <a href="mailto:joao.dutratrace@gmail.com?subject=Diagn%C3%B3stico%20DutraTrace" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; background: #FFFFFF; color: #14181F; text-decoration: none; font-weight: 600">joao.dutratrace@gmail.com</a>
+        <a href="https://wa.me/5521998677609?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20do%20DutraTrace" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 600">WhatsApp (21) 99867-7609</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="max-width: 1160px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 14px; color: #5A6170">
+    <span>© 2026 DutraTrace</span>
+    <span>Análise de conteúdo público em redes sociais. Sem comentários, sem dados de seguidores.</span>
+  </footer>
+</div>
+</body>
+</html>
