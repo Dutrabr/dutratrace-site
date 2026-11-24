@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DutraTrace — Proof of delivery for influencer campaigns</title>
+<meta name="description" content="DutraTrace tracks the creators in your campaign across Instagram, TikTok and YouTube. Every post and story is captured before it disappears, transcribed, read on screen and checked against your brief.">
+<meta property="og:title" content="DutraTrace — Proof of delivery for influencer campaigns">
+<meta property="og:description" content="Stories disappear in 24 hours. The proof shouldn't. Free test report with up to 5 creators.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="pt-BR" href="https://dutratrace.com.br/">
+<link rel="alternate" hreflang="en" href="https://dutratrace.com.br/en">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20transform%3D%22translate(-.5%20-.5)%22%20fill%3D%22%23C6613F%22%20d%3D%22M2%201.5%2014.2%206.6a.7.7%200%200%201-.06%201.32L9.2%209.4a.7.7%200%200%200-.46.46l-1.5%204.9a.7.7%200%200%201-1.32.05z%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F5F1}
+a{color:#1F5FAD}a:hover{color:#164682}
+html{scroll-behavior:smooth}
+@property --n{syntax:'<integer>';inherits:false;initial-value:0}
+.cnt{--n:var(--to);counter-reset:n var(--n);animation:dtcount 1.8s cubic-bezier(.2,.7,.2,1) .3s both}
+.cnt::after{content:counter(n)}
+.cnt.pct::after{content:counter(n) "%"}
+@keyframes dtcount{from{--n:0}}
+.dt-under{background-image:linear-gradient(#4F8FE0,#4F8FE0);background-repeat:no-repeat;background-position:0 94%;background-size:0 5px;animation:dtunder 1s .5s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes dtunder{to{background-size:100% 5px}}
+.dt-scan{position:absolute;left:10px;right:10px;height:2px;border-radius:2px;background:#8DB8F0;box-shadow:0 0 14px 3px rgba(141,184,240,.6);top:8%;animation:dtscan 3s ease-in-out infinite alternate}
+@keyframes dtscan{from{top:6%}to{top:92%}}
+.dt-pulse{animation:dtpulse 2.2s ease-in-out infinite}
+@keyframes dtpulse{0%,100%{box-shadow:0 0 0 0 rgba(79,143,224,0)}50%{box-shadow:0 0 0 7px rgba(79,143,224,.45)}}
+.hl{border-radius:3px;padding:0 3px;animation:dthl 6s ease infinite}
+.hl.b{animation-delay:1.1s}
+@keyframes dthl{0%,14%{background:transparent;color:inherit}24%,86%{background:#1E3A63;color:#FFFFFF}100%{background:transparent;color:inherit}}
+.dt-in{animation:dtin .8s cubic-bezier(.2,.7,.2,1) both}
+.dt-in.d1{animation-delay:.6s}.dt-in.d2{animation-delay:1.1s}.dt-in.d3{animation-delay:1.6s}
+@keyframes dtin{from{opacity:0;translate:28px 0}}
+.dt-marquee{display:flex;width:max-content;animation:dtmq 38s linear infinite}
+@keyframes dtmq{to{transform:translateX(-50%)}}
+.lift{transition:transform .25s ease,box-shadow .25s ease}
+.lift:hover{transform:translateY(-5px);box-shadow:0 18px 36px -22px rgba(20,24,31,.4)}
+.btn{transition:transform .2s ease,filter .2s ease}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.dt-progress{display:none}
+@supports (animation-timeline: view()){
+.rv{animation:dtrv linear both;animation-timeline:view();animation-range:entry 5% cover 28%}
+.rv-li{animation:dtli linear both;animation-timeline:view();animation-range:entry 15% cover 38%}
+.rv-row{animation:dtli linear both;animation-timeline:view();animation-range:entry 0% cover 22%}
+.dt-progress{display:block;animation:dtprog linear both;animation-timeline:scroll(root)}
+}
+@keyframes dtrv{from{opacity:0;translate:0 44px;scale:.98}}
+@keyframes dtli{from{opacity:0;translate:-28px 0}}
+@keyframes dtprog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}.dt-under{background-size:100% 5px}}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#1F5FAD}
+.h2{margin:0;font-family:'Space Grotesk',sans-serif;font-size:42px;letter-spacing:-.02em;line-height:1.08}
+.lead{margin:0;font-size:18px;line-height:1.55;color:#3B4250}
+.card{padding:28px;background:#FFFFFF;border:1px solid #E4E1D8;border-radius:14px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:19px;font-family:'Space Grotesk',sans-serif}
+.card p{margin:0;font-size:15px;line-height:1.55;color:#3B4250}
+.dcard{padding:24px;background:#1E232B;border:1px solid #2C323D;border-radius:14px;display:flex;flex-direction:column;gap:10px}
+.dcard h3{margin:0;font-size:19px;font-family:'Space Grotesk',sans-serif;color:#FFFFFF}
+.dcard p{margin:0;font-size:15px;line-height:1.55;color:#B9BDC6}
+.inp{width:100%;box-sizing:border-box;min-height:48px;padding:10px 14px;border:1px solid #C9CDD4;border-radius:10px;font:inherit;font-size:16px;color:#14181F;background:#FFFFFF}
+.lbl{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#3B4250}
+td{padding:14px 18px}
+</style>
+<style>@media (max-width:640px){h1{font-size:40px!important}.h2{font-size:30px!important}}</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #14181F; background: #F6F5F1; width: 100%; min-height: 100vh">
+
+<div class="dt-progress" aria-hidden="true" style="position: fixed; top: 0; left: 0; width: 100%; height: 3px; background: #1F5FAD; transform-origin: 0 50%; z-index: 30"></div>
+
+<!-- NAV -->
+<header style="position: sticky; top: 0; z-index: 10; background: #14181F; border-bottom: 1px solid #262C36">
+<div style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF">
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="13.5" stroke="#4F8FE0" stroke-width="4"></circle><path d="M10.5 17.5l4.5 4.5 9-10" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span style="display: flex; flex-direction: column; font-family: 'Space Grotesk', sans-serif; font-weight: 700; line-height: 0.95"><span style="font-size: 17px; letter-spacing: 0.06em">DUTRA</span><span style="font-size: 13.5px; letter-spacing: 0.22em">TRACE</span></span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 22px; align-items: center; font-size: 15px">
+<a href="#problem" style="color: #C9CDD4; text-decoration: none">What captions hide</a>
+<a href="#report" style="color: #C9CDD4; text-decoration: none">Report</a>
+<a href="#custom" style="color: #C9CDD4; text-decoration: none">Custom rules</a>
+<a href="#pricing" style="color: #C9CDD4; text-decoration: none">Pricing</a>
+<a href="#faq" style="color: #C9CDD4; text-decoration: none">FAQ</a>
+<a href="/" hreflang="pt-BR" style="color: #C9CDD4; text-decoration: none">PT</a>
+<a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #1F5FAD; color: #FFFFFF; text-decoration: none; font-weight: 600">Free test report</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="background: #14181F; color: #E9E7E1">
+<div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px 88px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #8DB8F0; border: 1px solid #1E3A63; background: #142238; padding: 6px 12px; border-radius: 999px">Influencer campaign monitoring</span>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 58px; line-height: 1.03; letter-spacing: -0.03em; font-weight: 700; color: #FFFFFF">Stories disappear in 24 hours. <span class="dt-under">The proof</span> shouldn't.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #B9BDC6; max-width: 560px">DutraTrace tracks the creators in your campaign across Instagram, TikTok, YouTube and more. Every post, reel, story and video is captured with a timestamp before it expires. AI transcribes the audio, reads the on-screen text and checks each delivery against your brief: brand mention, coupon, link and ad disclosure.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; background: #1F5FAD; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px">Get a free test report</a>
+<a href="#report" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; border: 1px solid #3A414D; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px">See a sample report</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; padding-top: 20px; border-top: 1px solid #2C323D">
+<div style="display: flex; flex-direction: column; gap: 2px; max-width: 220px"><span class="cnt pct" aria-label="41%" style="--to: 41; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #8DB8F0"></span><span style="font-size: 13px; line-height: 1.4; color: #A9AEB8">of video stories from a 10M+ profile had a spoken offer that never appeared in writing</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; max-width: 160px"><span class="cnt" aria-label="3" style="--to: 3; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #FFFFFF"></span><span style="font-size: 13px; line-height: 1.4; color: #A9AEB8">layers read in every piece of content: speech, screen and caption</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; max-width: 160px"><span class="cnt" aria-label="30" style="--to: 30; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #FFFFFF"></span><span style="font-size: 13px; line-height: 1.4; color: #A9AEB8">days of history in the free test report</span></div>
+</div>
+</div>
+
+<!-- Mock: analyzed story -->
+<div style="flex: 1 1 420px; min-width: 0; display: flex; justify-content: center">
+<div style="position: relative; width: 100%; max-width: 440px; display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; justify-content: center">
+<div role="img" aria-label="Illustrative example of an analyzed story: price on screen highlighted and transcribed speech with an offer and link" style="width: 230px; height: 410px; border-radius: 28px; background: #2A303B; border: 6px solid #0B0E13; box-sizing: border-box; padding: 14px 12px; display: flex; flex-direction: column; gap: 10px; overflow: hidden">
+<div aria-hidden="true" style="display: flex; gap: 4px"><span style="flex: 1; height: 3px; border-radius: 2px; background: #E9E7E1"></span><span style="flex: 1; height: 3px; border-radius: 2px; background: #E9E7E1"></span><span style="flex: 1; height: 3px; border-radius: 2px; background: #5A6170"></span></div>
+<div style="display: flex; align-items: center; gap: 8px; font-size: 11px; color: #E9E7E1"><span aria-hidden="true" style="width: 22px; height: 22px; border-radius: 50%; background: #5A6170"></span>creator · 2 h</div>
+<div style="position: relative; flex: 1; border-radius: 14px; background: #3A414D; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; padding: 12px; overflow: hidden">
+<div class="dt-scan" aria-hidden="true"></div>
+<div aria-hidden="true" style="width: 96px; height: 96px; border-radius: 18px; background: #4A5260"></div>
+<span class="dt-pulse" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #FFFFFF; padding: 4px 10px; border: 2px dashed #1F5FAD; border-radius: 8px">CODE BIA10</span>
+<span style="font-size: 11px; color: #FFFFFF; padding: 4px 8px; background: #14181F; border-radius: 6px">LINK IN BIO</span>
+</div>
+<div style="border-radius: 10px; background: #14181F; padding: 8px 10px; font-size: 11px; line-height: 1.45; color: #D3D6DC">"…this kit is <span class="hl">20% off with my code</span>, <span class="hl b">link is in my bio</span>…"</div>
+</div>
+<div style="flex: 1 1 170px; min-width: 0; max-width: 190px; display: flex; flex-direction: column; gap: 12px; padding-top: 24px">
+<div class="dt-in d1" style="background: #1E232B; border: 1px solid #2C323D; border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #F2D06B">Speech · 0:07</span>
+<span style="font-size: 13px; line-height: 1.4; color: #E9E7E1">Discount and link said out loud</span>
+</div>
+<div class="dt-in d2" style="background: #1E232B; border: 1px solid #2C323D; border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #F2D06B">Screen · OCR</span>
+<span style="font-size: 13px; line-height: 1.4; color: #E9E7E1">"CODE BIA10" and "link in bio"</span>
+</div>
+<div class="dt-in d3" style="background: #1E232B; border: 1px solid #1E3A63; border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #8DB8F0">Point of attention</span>
+<span style="font-size: 13px; line-height: 1.4; color: #E9E7E1">Paid offer without an #ad disclosure</span>
+</div>
+<span style="font-size: 11px; line-height: 1.4; color: #8C929D">Illustrative example.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<div style="background: #1F5FAD; color: #FFFFFF; overflow: hidden; padding: 16px 0; font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em">
+<p style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: 0">DutraTrace analyzes speech, on-screen text, captions, posts, reels, stories, YouTube and TikTok videos, coupons, links in bio and ad disclosures.</p>
+<div class="dt-marquee" aria-hidden="true">
+<div style="display: flex; gap: 40px; padding-right: 40px; white-space: nowrap">
+<span>speech transcribed</span><span style="opacity: .6">/</span><span>on-screen text</span><span style="opacity: .6">/</span><span>captions</span><span style="opacity: .6">/</span><span>posts and reels</span><span style="opacity: .6">/</span><span>24 h stories</span><span style="opacity: .6">/</span><span>YouTube</span><span style="opacity: .6">/</span><span>TikTok</span><span style="opacity: .6">/</span><span>coupons</span><span style="opacity: .6">/</span><span>link in bio</span><span style="opacity: .6">/</span><span>#ad</span><span style="opacity: .6">/</span><span>giveaways</span><span style="opacity: .6">/</span>
+</div>
+<div style="display: flex; gap: 40px; padding-right: 40px; white-space: nowrap">
+<span>speech transcribed</span><span style="opacity: .6">/</span><span>on-screen text</span><span style="opacity: .6">/</span><span>captions</span><span style="opacity: .6">/</span><span>posts and reels</span><span style="opacity: .6">/</span><span>24 h stories</span><span style="opacity: .6">/</span><span>YouTube</span><span style="opacity: .6">/</span><span>TikTok</span><span style="opacity: .6">/</span><span>coupons</span><span style="opacity: .6">/</span><span>link in bio</span><span style="opacity: .6">/</span><span>#ad</span><span style="opacity: .6">/</span><span>giveaways</span><span style="opacity: .6">/</span>
+</div>
+</div>
+</div>
+
+<!-- PROBLEM -->
+<section id="problem" style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span class="eyebrow">The problem</span>
+<h2 class="h2 rv">If you only check the caption, you miss most of the delivery.</h2>
+<p class="lead">Most tools read text and metrics. The brand mention, the coupon and the offer often live in the audio and on screen, in feed reels and in stories, which vanish the next day.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<div class="rv" style="background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A6170">What the caption shows</h3>
+<p style="margin: 0; padding: 18px; background: #F6F5F1; border-radius: 10px; font-size: 17px; line-height: 1.5; color: #14181F">"Obsessed with this new kit, hurry before it sells out!"</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #5A6170">
+<li>No brand named</li>
+<li>No coupon or link</li>
+<li>No #ad</li>
+<li>Story: gone everywhere after 24 h</li>
+</ul>
+</div>
+<div class="rv" style="background: #14181F; color: #E9E7E1; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #8DB8F0">What DutraTrace finds</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.45">
+<li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 72px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">SPEECH</span><span>Brand, discount and "link in my bio" said out loud</span></li>
+<li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 72px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">SCREEN</span><span>Coupon code, product and brand @ tagged on the image</span></li>
+<li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 72px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">CAPTION</span><span>No #ad or "paid partnership" up front</span></li>
+<li class="rv-li" style="display: flex; gap: 12px"><span style="flex: 0 0 72px; font-size: 12px; font-weight: 600; color: #F2D06B; padding-top: 3px">ARCHIVE</span><span>Story saved with date, time and SHA-256 hash, even after it disappears</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background: #FFFFFF; border-top: 1px solid #DEDBD2; border-bottom: 1px solid #DEDBD2">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span class="eyebrow">How it works</span>
+<h2 class="h2 rv">Three steps. Nobody on your team watching story after story.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
+<div class="rv lift card"><span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; background: #E7EFF9; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: #1F5FAD">1</span><h3>You pick the creators</h3><p>The profiles in your campaign or roster, the period, and what matters: your brand, competitors, coupons, links and the rules in your brief.</p></div>
+<div class="rv lift card"><span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; background: #E7EFF9; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: #1F5FAD">2</span><h3>Capture runs on its own</h3><p>Instagram feed and stories, YouTube and TikTok videos and other networks are collected and archived every day. Public content only: no comments, no follower data.</p></div>
+<div class="rv lift card"><span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; background: #E7EFF9; font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: #1F5FAD">3</span><h3>You get the report</h3><p>Deliveries per creator, points of attention with the exact quote, and the archived file for every piece of content, plus the KPIs your team defined.</p></div>
+</div>
+</div>
+</section>
+
+<!-- REPORT -->
+<section id="report" style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span class="eyebrow">The report</span>
+<h2 class="h2 rv">Every delivery with where, when and the exact quote.</h2>
+</div>
+<p style="margin: 0; font-size: 14px; color: #5A6170; max-width: 300px">Example with fictional data. Points of attention are not accusations of wrongdoing.</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E4E1D8; border-radius: 16px; overflow-x: auto">
+<table style="width: 100%; min-width: 760px; border-collapse: collapse; font-size: 14px; text-align: left">
+<thead><tr style="background: #F6F5F1; color: #5A6170; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase">
+<th scope="col" style="padding: 14px 18px; font-weight: 600">Date</th><th scope="col" style="padding: 14px 18px; font-weight: 600">Creator</th><th scope="col" style="padding: 14px 18px; font-weight: 600">Format</th><th scope="col" style="padding: 14px 18px; font-weight: 600">Where</th><th scope="col" style="padding: 14px 18px; font-weight: 600">Finding</th><th scope="col" style="padding: 14px 18px; font-weight: 600">Quote</th>
+</tr></thead>
+<tbody>
+<tr class="rv-row" style="border-top: 1px solid #ECE9E1"><td style="white-space: nowrap">Nov 10 · 9:14 pm</td><td>Creator A</td><td>Story</td><td><span style="padding: 3px 8px; border-radius: 999px; background: #E3F4EA; color: #17733F; font-size: 12px; font-weight: 600">Delivered</span></td><td>Brand, coupon and link confirmed</td><td style="color: #3B4250">"…use my code BIA10, link is in my bio…"</td></tr>
+<tr class="rv-row" style="border-top: 1px solid #ECE9E1"><td style="white-space: nowrap">Nov 10 · 9:16 pm</td><td>Creator A</td><td>Story</td><td><span style="padding: 3px 8px; border-radius: 999px; background: #FDF3D7; color: #6B5310; font-size: 12px; font-weight: 600">Speech</span></td><td>Results claim outside the brief</td><td style="color: #3B4250">"…in two weeks my skin changed…"</td></tr>
+<tr class="rv-row" style="border-top: 1px solid #ECE9E1"><td style="white-space: nowrap">Nov 9 · 6:02 pm</td><td>Creator B</td><td>Reel</td><td><span style="padding: 3px 8px; border-radius: 999px; background: #E6EEF9; color: #1F4E8C; font-size: 12px; font-weight: 600">Screen</span></td><td>Wrong coupon code on screen</td><td style="color: #3B4250">"CODE BIA01"</td></tr>
+<tr class="rv-row" style="border-top: 1px solid #ECE9E1"><td style="white-space: nowrap">Nov 11 · 12:40 pm</td><td>Creator C</td><td>Post</td><td><span style="padding: 3px 8px; border-radius: 999px; background: #EEE8F7; color: #5B3A8C; font-size: 12px; font-weight: 600">Caption</span></td><td>Brand promoted without #ad up front</td><td style="color: #3B4250">No disclosure in the first 100 characters</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- EVIDENCE -->
+<section id="evidence" style="max-width: 1160px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<span class="eyebrow">Evidence pack</span>
+<h2 class="h2 rv">Every piece of content kept as proof.</h2>
+<p class="lead">Saying you saw it isn't enough for clients, legal or compliance. Each captured file comes with a record that shows what was published and proves the file wasn't changed afterwards.</p>
+</div>
+<div class="rv" style="flex: 1 1 480px; min-width: 0; background: #14181F; color: #E9E7E1; border-radius: 16px; padding: 28px; font-size: 14px">
+<p style="margin: 0 0 16px; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #8DB8F0">Record of one story</p>
+<dl style="margin: 0; display: grid; grid-template-columns: minmax(120px, auto) 1fr; gap: 10px 20px">
+<dt style="color: #A9AEB8">Original file</dt><dd style="margin: 0">.mp4 video, as published</dd>
+<dt style="color: #A9AEB8">Profile</dt><dd style="margin: 0">link to the source profile</dd>
+<dt style="color: #A9AEB8">Source</dt><dd style="margin: 0">story, post, reel or video (YouTube, TikTok)</dd>
+<dt style="color: #A9AEB8">Captured at</dt><dd style="margin: 0">date and time of capture</dd>
+<dt style="color: #A9AEB8">SHA-256</dt><dd style="margin: 0; font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: #8DB8F0; overflow-wrap: anywhere">9f3c1a7e52b04d8e…a61c07e4b2d95f18c3</dd>
+<dt style="color: #A9AEB8">Speech</dt><dd style="margin: 0">transcribed quote</dd>
+<dt style="color: #A9AEB8">Screen</dt><dd style="margin: 0">text read on the image</dd>
+<dt style="color: #A9AEB8">Alerts</dt><dd style="margin: 0">rules that were triggered</dd>
+</dl>
+<p style="margin: 18px 0 0; font-size: 13px; color: #8C929D">Delivered as a spreadsheet and PDF, together with the files.</p>
+</div>
+</section>
+
+<!-- CUSTOM -->
+<section id="custom" style="background: #14181F; color: #E9E7E1">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 680px">
+<span class="eyebrow" style="color: #8DB8F0">Custom rules</span>
+<h2 class="h2 rv" style="color: #FFFFFF">KPIs and alerts built around your brief.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #B9BDC6">Every campaign has its own rules. We set up with you what must be checked and which KPIs go into the report. AI agents review every delivery and only ping your team when something needs attention.</p>
+</div>
+<a class="btn" href="#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 10px; background: #1F5FAD; color: #FFFFFF; text-decoration: none; font-weight: 600">Build mine</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div class="rv lift dcard"><h3>Proof of delivery</h3><p>Contracted vs. published posts and stories, per creator and per campaign, with the archived files.</p></div>
+<div class="rv lift dcard"><h3>Brief compliance</h3><p>Brand mention, product shown, correct coupon and link, key messages and things the creator must not say.</p></div>
+<div class="rv lift dcard"><h3>Ad disclosure</h3><p>Checks for #ad, "paid partnership" or local equivalents at the start of the caption and on screen.</p></div>
+<div class="rv lift dcard"><h3>Health and beauty claims</h3><p>Results promises like "cures", "in two weeks" or "before and after", in speech or on screen.</p></div>
+<div class="rv lift dcard"><h3>Competitors</h3><p>Is the creator also promoting a competing brand during your campaign?</p></div>
+<div class="rv lift dcard" style="border-color: #1E3A63"><h3>Your market</h3><p>Tell us what matters to your business and we build the rules and KPIs from scratch.</p></div>
+</div>
+</div>
+</section>
+
+<!-- WHO -->
+<section id="who" style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span class="eyebrow">Who it's for</span>
+<h2 class="h2 rv">For whoever pays for, runs or answers for what gets published.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px">
+<div class="rv lift card"><h3>Influencer agencies</h3><p>A ready-made delivery report for every client, without screenshotting stories by hand.</p></div>
+<div class="rv lift card"><h3>Brands</h3><p>Know that the contract was fulfilled, and whether the creator also promotes competitors.</p></div>
+<div class="rv lift card"><h3>Legal teams</h3><p>Posts, stories and videos archived with date, source and hash, ready for disputes and reviews.</p></div>
+<div class="rv lift card"><h3>Compliance</h3><p>Check what a creator advertised in the last 30 days before signing a contract.</p></div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="background: #14181F; color: #E9E7E1">
+<div style="max-width: 1160px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span class="eyebrow" style="color: #8DB8F0">Pricing</span>
+<h2 class="h2 rv" style="color: #FFFFFF">Start with a free test report.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #B9BDC6">Send us up to 5 creator handles, or just your niche and we'll use public profiles from it. We review their feed from the last 30 days plus this week's stories and send you the report privately within a week.</p>
+<p class="rv" style="margin: 8px 0 0; padding: 18px 20px; border-left: 3px solid #4F8FE0; background: #1E232B; border-radius: 0 10px 10px 0; font-size: 17px; line-height: 1.5; color: #FFFFFF">Monitoring tools find the post that tags your brand. DutraTrace finds the delivery that tagged nothing.</p>
+</div>
+<div class="rv" style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; color: #14181F; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
+<span style="align-self: flex-start; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #1F5FAD; border: 1px solid #C5D6EE; background: #E7EFF9; padding: 6px 12px; border-radius: 999px">Ongoing monitoring</span>
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; line-height: 1.15">Priced by the number of creators you track</p>
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #5A6170">The more creators, the lower the price per creator. Founder pricing for our first international clients.</p>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.5; color: #3B4250">
+<li>Instagram (feed and stories), TikTok and YouTube</li>
+<li>KPIs and rules defined with your team</li>
+<li>Weekly report with points of attention</li>
+<li>Archive of every captured piece of content</li>
+<li>Reports in English, Spanish or Portuguese</li>
+</ul>
+<a href="#contact" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 10px; background: #1F5FAD; color: #FFFFFF; text-decoration: none; font-weight: 600">Get a free test report</a>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="max-width: 860px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="eyebrow">FAQ</span>
+<h2 class="h2 rv">Before you ask</h2>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #DEDBD2">
+<details class="rv" style="border-bottom: 1px solid #DEDBD2; padding: 20px 0"><summary style="cursor: pointer; font-size: 18px; font-weight: 600; font-family: 'Space Grotesk', sans-serif; min-height: 28px">What data do you collect?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3B4250">Only content the creator published publicly: posts, stories, videos and captions. We don't collect comments, follower data or anything from private profiles.</p></details>
+<details class="rv" style="border-bottom: 1px solid #DEDBD2; padding: 20px 0"><summary style="cursor: pointer; font-size: 18px; font-weight: 600; font-family: 'Space Grotesk', sans-serif; min-height: 28px">Does the creator know they're being monitored?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3B4250">No. Capture doesn't interact with the profile: it doesn't follow, like, comment or show up in story views.</p></details>
+<details class="rv" style="border-bottom: 1px solid #DEDBD2; padding: 20px 0"><summary style="cursor: pointer; font-size: 18px; font-weight: 600; font-family: 'Space Grotesk', sans-serif; min-height: 28px">Do you tell us whether a rule was broken?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3B4250">We flag points of attention with the quote and the file so your team can decide. Legal conclusions stay with you or your lawyer.</p></details>
+<details class="rv" style="border-bottom: 1px solid #DEDBD2; padding: 20px 0"><summary style="cursor: pointer; font-size: 18px; font-weight: 600; font-family: 'Space Grotesk', sans-serif; min-height: 28px">I don't want to share my creators. Can I still test it?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3B4250">Yes. Tell us your niche and we'll run the test report on public profiles from that niche, so you can see the output without sharing anything.</p></details>
+<details class="rv" style="border-bottom: 1px solid #DEDBD2; padding: 20px 0"><summary style="cursor: pointer; font-size: 18px; font-weight: 600; font-family: 'Space Grotesk', sans-serif; min-height: 28px">Which networks and languages do you cover?</summary><p style="margin: 12px 0 0; font-size: 16px; line-height: 1.6; color: #3B4250">Instagram (feed and stories), TikTok and YouTube; other networks on request. Speech and on-screen text are read in English, Spanish, Portuguese and other major languages.</p></details>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background: #1F5FAD; color: #FFFFFF">
+<div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 class="h2">Want to see what your creators actually delivered this month?</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #E7EFF9">Fill in the form and we'll get back to you with a sample report. Add creator handles (or your niche) and we'll prepare your free test report.</p>
+<p style="margin: 8px 0 0; font-size: 15px; color: #E7EFF9">Prefer to talk directly?</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="mailto:contato@dutratrace.com.br?subject=DutraTrace%20test%20report" style="display: inline-flex; gap: 8px; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 600">Email</a>
+<a href="https://www.linkedin.com/company/dutratrace/" target="_blank" rel="noopener" style="display: inline-flex; gap: 8px; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; border: 1px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 600">LinkedIn</a>
+</div>
+</div>
+<form action="https://formsubmit.co/joao.dutratrace@gmail.com" method="POST" style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; color: #14181F; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<input type="hidden" name="_subject" value="New contact from DutraTrace website (EN)">
+<input type="hidden" name="_next" value="https://dutratrace.com.br/en-thanks.html">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700">Free test report</p>
+<label class="lbl">Name<input class="inp" type="text" name="name" required autocomplete="name"></label>
+<label class="lbl">Company<input class="inp" type="text" name="company" required autocomplete="organization"></label>
+<label class="lbl">Work email<input class="inp" type="email" name="email" required autocomplete="email"></label>
+<label class="lbl">You are<select class="inp" name="type" required><option value="">Select</option><option>Influencer agency</option><option>Brand / advertiser</option><option>Legal / compliance</option><option>Other</option></select></label>
+<label class="lbl">Creator handles or your niche (optional)<input class="inp" type="text" name="creators" placeholder="@creator1, @creator2 or e.g. skincare"></label>
+<button type="submit" class="btn" style="min-height: 52px; border: 0; border-radius: 10px; background: #1F5FAD; color: #FFFFFF; font: inherit; font-weight: 600; font-size: 16px; cursor: pointer">Request my free report</button>
+<p style="margin: 0; font-size: 13px; line-height: 1.5; color: #5A6170">We only use your details to reply and send the report.</p>
+</form>
+</div>
+</section>
+
+<footer style="background: #14181F; color: #A9AEB8">
+<div style="max-width: 1160px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 14px">
+<span>© 2026 DutraTrace · Analysis of public social media content. No comments, no follower data.</span>
+<span><a href="mailto:contato@dutratrace.com.br" style="color: #C9CDD4">contato@dutratrace.com.br</a> · <a href="https://www.linkedin.com/company/dutratrace/" style="color: #C9CDD4">LinkedIn</a> · <a href="/" style="color: #C9CDD4">Português</a></span>
+</div>
+</footer>
+
+</div>
+</body></html>
